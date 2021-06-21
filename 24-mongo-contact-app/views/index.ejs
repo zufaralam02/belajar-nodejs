@@ -1,0 +1,19 @@
+<h1>Hello World</h1>
+
+<p>Welcome to my site</p>
+
+<p>Hello : <%= name %>
+</p>
+
+<h4>List users</h4>
+
+<% if (users.length < 1) { %>
+  <p>Users not found</p>
+<% } else { %>
+  <% users.forEach(user=> { %>
+    <ul>
+      <li>Name : <%= user.name %></li>
+      <li>Email : <%= user.email %></li>
+    </ul>
+  <% }) %>
+<% } %>
